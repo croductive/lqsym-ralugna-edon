@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/user
+
+###
+GET http://localhost:3000/user/1
+
+###
+GET http://localhost:3000/user/10213
+
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "fullname": "peti",
+  "email": "peti@treci.com",
+  "mobile": "023442203240"
+}
+
+###
+PUT http://localhost:3000/user/1
+Content-Type: application/json
+
+{
+  "fullname": "prvi edit",
+  "email": "petiedit@treci.com",
+  "mobile": "123456"
+}
+
+### 
+DELETE http://localhost:3000/user/5
